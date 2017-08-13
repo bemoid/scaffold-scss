@@ -1,0 +1,44 @@
+// ------------------------------------------------------
+// Bemoid Framework Imports
+// ------------------------------------------------------
+// We start by including the framework. Attaching project
+// settings before importing framework itself allow
+// us to overwrite its default values.
+
+@import 'settings';
+@import 'bemoid';
+
+// ------------------------------------------------------
+// Project Imports
+// ------------------------------------------------------
+// Next, include all of your project specific components,
+// so framework's declarations can be easily
+// extended by your custom CSS.
+
+// 1. Variables
+// ------------------------------------------------------
+@import 'variables';
+
+// 2. Functions
+// ------------------------------------------------------
+// @import 'functions/example';
+
+// 3. Mixins
+// ------------------------------------------------------
+// @import 'mixins/example';
+
+// 4. Generic
+// ------------------------------------------------------
+// @import 'generic/example';
+
+// 5. Objects
+// ------------------------------------------------------
+// @import 'objects/example';
+
+// 6. Components
+// ------------------------------------------------------
+// @import 'components/example';
+
+// 7. Utilities
+// ------------------------------------------------------
+// @import 'utilities/example';

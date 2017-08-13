@@ -1,0 +1,17 @@
+// ------------------------------------------------------
+// Bemoid Framework Settings
+// ------------------------------------------------------
+// This file holds framework settings. You can easly
+// customize framework's modules by changing
+// variable values listed in here.
+
+{{#with bemoid}}
+{{#each variables as |entries component|}}
+// {{add @index 1}}. {{uppercase component}}
+// ------------------------------------------------------
+{{#each entries}}
+{{{variable}}}: {{{value}}};
+{{/each}}
+
+{{/each}}
+{{/with}}
