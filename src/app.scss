@@ -1,44 +1,49 @@
-// ------------------------------------------------------
+// -------------------------------------------------------
 // Bemoid Framework Imports
-// ------------------------------------------------------
-// We start by including the framework. Attaching project
-// settings before importing framework itself allow
-// us to overwrite its default values.
+// -------------------------------------------------------
+// Start by including the framework. Be mindful about the
+// order of imports. First should go lowlevel functions
+// and mixins (1), next our settings (2) to overwrite
+// default and afterwards fremework itself (3).
 
-@import 'settings';
-@import 'bemoid';
+@import 'uses';     // (1) - Include framework and project functions and mixins.
+@import 'settings'; // (2) - Our custom settings to overwrite defaults.
+@import 'bemoid';   // (3) - Importing framework's modules.
 
-// ------------------------------------------------------
+
+// -------------------------------------------------------
 // Project Imports
-// ------------------------------------------------------
+// -------------------------------------------------------
 // Next, include all of your project specific components,
 // so framework's declarations can be easily
 // extended by your custom CSS.
 
+
 // 1. Variables
-// ------------------------------------------------------
+// -------------------------------------------------------
+
 @import 'variables';
 
-// 2. Functions
-// ------------------------------------------------------
-// @import 'functions/example';
 
-// 3. Mixins
-// ------------------------------------------------------
-// @import 'mixins/example';
+// 2. Generic
+// -------------------------------------------------------
 
-// 4. Generic
-// ------------------------------------------------------
 // @import 'generic/example';
 
-// 5. Objects
-// ------------------------------------------------------
+
+// 3. Objects
+// -------------------------------------------------------
+
 // @import 'objects/example';
 
-// 6. Components
-// ------------------------------------------------------
+
+// 4. Components
+// -------------------------------------------------------
+
 // @import 'components/example';
 
-// 7. Utilities
-// ------------------------------------------------------
+
+// 5. Utilities
+// -------------------------------------------------------
+
 // @import 'utilities/example';

@@ -7,11 +7,13 @@
 
 {{#with bemoid}}
 {{#each imports as |lines component|}}
-// {{add @index 1}}. {{uppercase component}}
+{{#if_not_eq component 'uses'}}
+// {{@index}}. {{uppercase component}}
 // ------------------------------------------------------
 {{#each lines}}
 @import '{{{this}}}';
 {{/each}}
 
+{{/if_not_eq}}
 {{/each}}
 {{/with}}
