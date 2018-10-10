@@ -7,8 +7,6 @@
 // - (2) our settings to overwrite defaults
 // - (3) and fremework imports itself
 
-$bemoid_path: '../node_modules/@bemoid/bemoid';
-
 @import 'uses';     // (1) - Include framework and project functions and mixins.
 @import 'settings'; // (2) - Our custom settings to overwrite defaults.
 @import 'bemoid';   // (3) - Importing framework's modules.

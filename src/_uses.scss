@@ -7,7 +7,7 @@
 
 // Bemoid's Uses
 // -------------------------------------------------------
-@import '#{$bemoid_path}/uses';
+@import '{{@root.bemoid.path.relative}}/node_modules/uses';
 
 // Functions
 // -------------------------------------------------------
