@@ -1,49 +1,39 @@
 // -------------------------------------------------------
-// Bemoid Framework Imports
+// Bemoid's Imports
 // -------------------------------------------------------
-// Start by including the framework. Be mindful about the
-// order of imports. First should go lowlevel functions
-// and mixins (1), next our settings (2) to overwrite
-// default and afterwards fremework itself (3).
+// Start by including the framework. Be mindful about
+// the order of imports. It should start with:
+// - (1) low-level functions and mixins
+// - (2) our settings to overwrite defaults
+// - (3) and fremework imports itself
+
+$bemoid_path: '../node_modules/@bemoid/bemoid';
 
 @import 'uses';     // (1) - Include framework and project functions and mixins.
 @import 'settings'; // (2) - Our custom settings to overwrite defaults.
 @import 'bemoid';   // (3) - Importing framework's modules.
 
-
 // -------------------------------------------------------
-// Project Imports
+// Project's Imports
 // -------------------------------------------------------
-// Next, include all of your project specific components,
-// so framework's declarations can be easily
-// extended by your custom CSS.
+// Include all of your project specific components.
 
-
-// 1. Variables
+// Variables
 // -------------------------------------------------------
-
 @import 'variables';
 
-
-// 2. Generic
+// Generic
 // -------------------------------------------------------
-
 // @import 'generic/example';
 
-
-// 3. Objects
+// Objects
 // -------------------------------------------------------
-
 // @import 'objects/example';
 
-
-// 4. Components
+// Components
 // -------------------------------------------------------
-
 // @import 'components/example';
 
-
-// 5. Utilities
+// Utilities
 // -------------------------------------------------------
-
 // @import 'utilities/example';

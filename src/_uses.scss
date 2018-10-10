@@ -1,11 +1,18 @@
-// 1. Uses
-// ------------------------------------------------------
-@import 'uses';
+// -------------------------------------------------------
+// Project's Uses
+// -------------------------------------------------------
+// Import here your project's specific low-level functions
+// and mixins. Including early allows to access them
+// in all modules across the entire project.
 
-// 2. Functions
-// ------------------------------------------------------
+// Bemoid's Uses
+// -------------------------------------------------------
+@import '#{$bemoid_path}/uses';
+
+// Functions
+// -------------------------------------------------------
 // @import 'functions/example';
 
-// 3. Mixins
-// ------------------------------------------------------
+// Mixins
+// -------------------------------------------------------
 // @import 'mixins/example';

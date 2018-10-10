@@ -1,6 +1,6 @@
 # @bemoid/scaffold-scss
 
-> A standard SCSS setup for bootstraping a fully-featured front-end for your project based on Bemoid framework.
+> A standard SCSS setup for bootstrapping a fully-featured front-end for your project based on Bemoid framework.
 
 ### Usage
 
@@ -14,4 +14,4 @@ $ npm install -g @bemoid/cli
 $ bemoid scaffold @bemoid/scaffold-scss <directory>
 ```
 
-This will scaffold the template to specified directory.
+This will scaffold the template to the specified directory.

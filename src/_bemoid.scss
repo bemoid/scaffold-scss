@@ -1,6 +1,6 @@
-// ------------------------------------------------------
-// Bemoid Framework Imports
-// ------------------------------------------------------
+// -------------------------------------------------------
+// Bemoid's Imports
+// -------------------------------------------------------
 // This file is responsible for including all desired
 // framework's modules. Feel free to remove unused
 // imports to keep your stylesheet lightweight.
@@ -8,10 +8,10 @@
 {{#with bemoid}}
 {{#each imports as |lines component|}}
 {{#if_not_eq component 'uses'}}
-// {{@index}}. {{uppercase component}}
-// ------------------------------------------------------
+// {{uppercase component}}
+// -------------------------------------------------------
 {{#each lines}}
-@import '{{{this}}}';
+@import '#{$bemoid_path}/{{{this}}}';
 {{/each}}
 
 {{/if_not_eq}}
